@@ -24,6 +24,14 @@ white #fdfdfd
 .calc-screen {
 }
 .buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eigth nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
 }
 
 .btn {
