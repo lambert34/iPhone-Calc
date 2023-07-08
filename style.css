@@ -22,7 +22,20 @@ white #fdfdfd
 .calc {
 }
 .calc-screen {
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
 }
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
 .buttons {
     display: grid;
     grid-template-areas: 
@@ -32,6 +45,7 @@ white #fdfdfd
     "one two three plus"
     "zero zero dot equal";
     grid-gap: 7px;
+    justify-items: center;
 }
 
 .btn {
@@ -44,6 +58,12 @@ white #fdfdfd
     font-size: 1.5rem;
     cursor: pointer;
     user-select: none;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
 }
 
 .btn:hover {
